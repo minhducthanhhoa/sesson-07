@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Columns Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #adb6b8bc;
+        }
+
+        .column1 {
+            background-color: #adb6b8bc; 
+        }
+
+        .column2 {
+            background-color: white; 
+            width: 24%;
+        }
+        strong {
+            color: rgb(0, 13, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Product</th>
+            <td>Cloud Database</td>
+            <th>Billing<br>Mode</th>
+            <td>Prepai<br>d</td>
+            <th>Automatic<br>Renewal</th>
+            <td>YES</td>
+        </tr>
+        <tr>
+            <td class="column1">Order time</td>
+            <td class="column2">2018-04-24 <br>18:00:00</td>
+            <th>Usage Time</th>
+            <td colspan="3">2019-04-24 18:00:00</td>
+        </tr> 
+        <tr>
+            <td class="column1">Status</td>
+            <td colspan="5"><strong>•</strong>Running</td>
+        </tr>
+        <tr>
+            <td class="column1">Negotiated Amount</td>
+            <td class="column2">$80.00</td>
+            <th>Discount</th>
+            <td>$20.00</td>
+            <th>Official Receipts</th>
+            <td>$60.0<br>0</td>
+        </tr>
+        <tr>
+            <td class="column1">Config Info</td>
+            <td colspan="5">Data disk type: MongoDB<br>
+                Database version: 3.4<br>
+                Package: dds.mongo.mid<br>
+                Storage space: 10 GB<br>
+                Replication factor: 3<br>
+                Region: East China 1</td>
+        </tr>
+    </table>
+</body>
+</html>
